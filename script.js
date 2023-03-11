@@ -68,7 +68,7 @@ function countDown() {
     if (hoursLeft < 10) {
         hoursStr = `0${minutesLeft}`;
     } else {
-        if (minutesLeft == 59) changeInnerHtml(hoursLeft, hoursDigit1,hoursDigit2)
+        if (minutesLeft == 59 && secondsLeft == 59) changeInnerHtml(hoursLeft, hoursDigit1,hoursDigit2)
     }
     hoursDigit1.textContent = hoursStr[0]
     hoursDigit2.textContent = hoursStr[1]
